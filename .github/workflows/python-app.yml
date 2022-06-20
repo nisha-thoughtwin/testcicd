@@ -34,4 +34,5 @@ jobs:
         python manage.py migrate
     - name: Run tests
       # ... your test step here
-      run: python manage.py test apps common --parallel=4 --failfast
+      run: |
+        python manage.py test 
