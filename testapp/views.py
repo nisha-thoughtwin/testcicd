@@ -4,7 +4,7 @@ from .models import Employee
 from testapp.serializers import EmployeeSerializer
 
 
-# Create your views here.
+# Create views here.
 class EmployeeCreateApi(generics.CreateAPIView):
   queryset = Employee.objects.all()
   serializer_class = EmployeeSerializer
